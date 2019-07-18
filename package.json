@@ -1,6 +1,7 @@
 {
   "name": "node-bcrypt-mini",
   "version": "0.1.0",
+  "main": "server/",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",

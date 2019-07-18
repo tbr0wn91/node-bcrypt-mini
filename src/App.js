@@ -12,9 +12,18 @@ class App extends Component {
     };
   }
 
-  async login() {}
+  login() {}
 
-  async signup() {}
+  signup() {
+    const {email, password } = this.state;
+    axios.post("/auth/signup", {email, password}).then(res => {
+      this.setState({
+        loggedInUser: res.data,
+        email:"",
+        password:""
+      })
+    })
+  }
 
   logout() {}
 
